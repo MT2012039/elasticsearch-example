@@ -1,0 +1,1 @@
+{"name":"FormulaFunctionCategory","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"Name","type":"string"},{"name":"Label","type":"string"}]}

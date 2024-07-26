@@ -1,0 +1,1 @@
+{"name":"ActiveFeatureLicenseMetric","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"MetricsDate","type":"date"},{"name":"FeatureType","type":"picklist"},{"name":"SystemModstamp","type":"datetime"},{"name":"AssignedUserCount","type":"int"},{"name":"ActiveUserCount","type":"int"},{"name":"TotalLicenseCount","type":"int"}]}

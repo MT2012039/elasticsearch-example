@@ -1,0 +1,1 @@
+{"name":"ContentWorkspaceMember","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ContentWorkspaceId","type":"reference"},{"name":"ContentWorkspacePermissionId","type":"reference"},{"name":"MemberId","type":"reference"},{"name":"MemberType","type":"picklist"},{"name":"CreatedById","type":"reference"},{"name":"CreatedDate","type":"datetime"}]}

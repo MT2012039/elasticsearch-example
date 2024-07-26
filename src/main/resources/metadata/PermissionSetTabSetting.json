@@ -1,0 +1,1 @@
+{"name":"PermissionSetTabSetting","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ParentId","type":"reference"},{"name":"Visibility","type":"picklist"},{"name":"Name","type":"string"},{"name":"SystemModstamp","type":"datetime"}]}

@@ -1,0 +1,1 @@
+{"name":"UserPreference","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"Preference","type":"picklist"},{"name":"Value","type":"textarea"},{"name":"SystemModstamp","type":"datetime"}]}

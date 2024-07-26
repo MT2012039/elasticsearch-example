@@ -1,0 +1,1 @@
+{"name":"PlatformEventUsageMetric","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ExternalId","type":"string"},{"name":"Name","type":"picklist"},{"name":"StartDate","type":"datetime"},{"name":"EndDate","type":"datetime"},{"name":"Value","type":"long"}]}

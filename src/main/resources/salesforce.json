@@ -1,0 +1,170 @@
+{
+  "Account": {
+    "Description": "Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners)."
+  },
+  "AccountHistory": {
+    "Description": "Represents the history of changes to the values in the fields of an account."
+  },
+  "Contact": {
+    "Description": "Represents a contact, which is an individual associated with an account."
+  },
+  "Lead": {
+    "Description": "Represents a prospect or potential opportunity, i.e., an individual who has shown interest in your product or service."
+  },
+  "Opportunity": {
+    "Description": "Represents a sale or pending deal."
+  },
+  "Case": {
+    "Description": "Represents a customer issue or problem."
+  },
+  "Campaign": {
+    "Description": "Represents a marketing campaign, such as a direct mail or email campaign."
+  },
+  "Task": {
+    "Description": "Represents a task that a user needs to perform."
+  },
+  "Event": {
+    "Description": "Represents an event, such as a meeting or phone call."
+  },
+  "Solution": {
+    "Description": "Represents a detailed description of a customer issue and the resolution of that issue."
+  },
+  "User": {
+    "Description": "Represents a user in your organization."
+  },
+  "Product": {
+    "Description": "Represents a product that your organization sells."
+  },
+  "Pricebook": {
+    "Description": "Represents a book that lists the prices of products that your organization sells."
+  },
+  "Quote": {
+    "Description": "Represents a quote, which is a record showing proposed prices for products and services."
+  },
+  "Asset": {
+    "Description": "Represents an item of commercial value, such as a product sold by your organization."
+  },
+  "Contract": {
+    "Description": "Represents a contract (a business agreement) associated with an Account."
+  },
+  "Report": {
+    "Description": "Represents a report."
+  },
+  "Dashboard": {
+    "Description": "Represents a dashboard, which is a visual representation of key business metrics and performance indicators."
+  },
+  "Document": {
+    "Description": "Represents a file that a user can upload and store in Salesforce."
+  },
+  "Attachment": {
+    "Description": "Represents a file that a user can attach to a parent object record."
+  },
+  "EmailMessage": {
+    "Description": "Represents an email message."
+  },
+  "EventRelation": {
+    "Description": "Represents a relationship between an event and another object, such as a contact or lead."
+  },
+  "FeedItem": {
+    "Description": "Represents a single feed item in a Chatter feed."
+  },
+  "Note": {
+    "Description": "Represents a note that a user can attach to a parent object record."
+  },
+  "Group": {
+    "Description": "Represents a group of users."
+  },
+  "Site": {
+    "Description": "Represents a website hosted on Salesforce."
+  },
+  "Profile": {
+    "Description": "Represents a user profile."
+  },
+  "PermissionSet": {
+    "Description": "Represents a set of permissions that can be assigned to users."
+  },
+  "ApexClass": {
+    "Description": "Represents an Apex class."
+  },
+  "ApexTrigger": {
+    "Description": "Represents an Apex trigger."
+  },
+  "AccountContactRole": {
+    "Description": "Represents the role that a Contact plays on an Account."
+  },
+  "Activity": {
+    "Description": "Represents a task or event in Salesforce."
+  },
+  "Article": {
+    "Description": "Represents a Salesforce Knowledge article."
+  },
+  "CampaignMember": {
+    "Description": "Represents the association between a campaign and a lead or a contact."
+  },
+  "CaseTeamMember": {
+    "Description": "Represents a member of a case team."
+  },
+  "ContentDocument": {
+    "Description": "Represents a document that has been uploaded to a library in Salesforce CRM Content or Salesforce Files."
+  },
+  "ContentDocumentLink": {
+    "Description": "Represents the link between a Salesforce CRM Content document or Salesforce file and where it's shared."
+  },
+  "ContentFolder": {
+    "Description": "Represents a folder in Salesforce CRM Content."
+  },
+  "ContentFolderLink": {
+    "Description": "Represents the link between a Salesforce CRM Content folder and where it's shared."
+  },
+  "ContentVersion": {
+    "Description": "Represents a specific version of a Salesforce CRM Content document or Salesforce file."
+  },
+  "ContractContactRole": {
+    "Description": "Represents the role that a Contact plays on a Contract."
+  },
+  "Idea": {
+    "Description": "Represents an idea posted to the Ideas application."
+  },
+  "IdeaComment": {
+    "Description": "Represents a comment on an idea."
+  },
+  "KnowledgeArticle": {
+    "Description": "Represents a knowledge article."
+  },
+  "KnowledgeArticleVersion": {
+    "Description": "Represents a specific version of a knowledge article."
+  },
+  "OpportunityContactRole": {
+    "Description": "Represents the role that a Contact plays on an Opportunity."
+  },
+  "Partner": {
+    "Description": "Represents a partner, such as a distributor or reseller."
+  },
+  "PartnerRole": {
+    "Description": "Represents a role in the partner relationship."
+  },
+  "Pricebook2": {
+    "Description": "Represents a price book that lists the prices of products that your organization sells."
+  },
+  "PricebookEntry": {
+    "Description": "Represents an entry in a price book that lists the price of a product."
+  },
+  "QuoteLineItem": {
+    "Description": "Represents a line item on a quote."
+  },
+  "SiteDetail": {
+    "Description": "Represents detailed information about a site."
+  },
+  "SolutionStatus": {
+    "Description": "Represents the status of a solution."
+  },
+  "StaticResource": {
+    "Description": "Represents a static resource, such as a JavaScript or CSS file."
+  },
+  "WorkOrder": {
+    "Description": "Represents a work order."
+  },
+  "WorkOrderLineItem": {
+    "Description": "Represents a line item on a work order."
+  }
+}

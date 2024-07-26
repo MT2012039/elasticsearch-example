@@ -1,0 +1,1 @@
+{"name":"ProcessNode","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"Name","type":"string"},{"name":"DeveloperName","type":"string"},{"name":"ProcessDefinitionId","type":"reference"},{"name":"Description","type":"textarea"},{"name":"SystemModstamp","type":"datetime"}]}

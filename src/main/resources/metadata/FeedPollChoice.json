@@ -1,0 +1,1 @@
+{"name":"FeedPollChoice","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"FeedItemId","type":"reference"},{"name":"Position","type":"int"},{"name":"ChoiceBody","type":"textarea"},{"name":"CreatedById","type":"reference"},{"name":"CreatedDate","type":"datetime"},{"name":"IsDeleted","type":"boolean"}]}

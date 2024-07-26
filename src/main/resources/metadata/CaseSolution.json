@@ -1,0 +1,1 @@
+{"name":"CaseSolution","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"CaseId","type":"reference"},{"name":"SolutionId","type":"reference"},{"name":"CreatedById","type":"reference"},{"name":"CreatedDate","type":"datetime"},{"name":"SystemModstamp","type":"datetime"},{"name":"IsDeleted","type":"boolean"}]}

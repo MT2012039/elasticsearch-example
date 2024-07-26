@@ -1,0 +1,1 @@
+{"name":"ContentDocumentSubscription","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"ContentDocumentId","type":"reference"},{"name":"IsCommentSub","type":"boolean"},{"name":"IsDocumentSub","type":"boolean"}]}

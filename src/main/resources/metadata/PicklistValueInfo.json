@@ -1,0 +1,1 @@
+{"name":"PicklistValueInfo","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"Value","type":"string"},{"name":"Label","type":"string"},{"name":"IsDefaultValue","type":"boolean"},{"name":"IsActive","type":"boolean"},{"name":"ValidFor","type":"string"},{"name":"EntityParticleId","type":"string"}]}

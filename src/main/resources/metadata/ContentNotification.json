@@ -1,0 +1,1 @@
+{"name":"ContentNotification","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"Nature","type":"string"},{"name":"UsersId","type":"reference"},{"name":"CreatedDate","type":"datetime"},{"name":"EntityType","type":"string"},{"name":"EntityIdentifierId","type":"reference"},{"name":"Subject","type":"textarea"},{"name":"Text","type":"textarea"}]}

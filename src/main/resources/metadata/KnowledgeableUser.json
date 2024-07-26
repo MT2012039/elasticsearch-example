@@ -1,0 +1,1 @@
+{"name":"KnowledgeableUser","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"TopicId","type":"reference"},{"name":"RawRank","type":"int"},{"name":"SystemModstamp","type":"datetime"}]}

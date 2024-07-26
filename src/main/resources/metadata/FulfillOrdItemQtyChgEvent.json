@@ -1,0 +1,1 @@
+{"name":"FulfillOrdItemQtyChgEvent","description":null,"summary":null,"attributes":[{"name":"ReplayId","type":"string"},{"name":"CreatedDate","type":"datetime"},{"name":"CreatedById","type":"reference"},{"name":"EventUuid","type":"string"},{"name":"FulfillmentOrderLineItemId","type":"reference"},{"name":"OldQuantity","type":"double"},{"name":"NewQuantity","type":"double"}]}

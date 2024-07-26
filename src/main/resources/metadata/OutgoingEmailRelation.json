@@ -1,0 +1,1 @@
+{"name":"OutgoingEmailRelation","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ExternalId","type":"string"},{"name":"OutgoingEmailId","type":"string"},{"name":"RelationId","type":"reference"},{"name":"RelationAddress","type":"string"}]}

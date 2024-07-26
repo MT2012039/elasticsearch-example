@@ -1,0 +1,1 @@
+{"name":"ColorDefinition","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"TabDefinitionId","type":"string"},{"name":"Color","type":"string"},{"name":"Theme","type":"string"},{"name":"Context","type":"string"}]}

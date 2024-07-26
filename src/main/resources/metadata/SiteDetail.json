@@ -1,0 +1,1 @@
+{"name":"SiteDetail","description":"Represents detailed information about a site.","summary":"Represents detailed information about a site.","attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"IsRegistrationEnabled","type":"boolean"},{"name":"SecureUrl","type":"url"}]}

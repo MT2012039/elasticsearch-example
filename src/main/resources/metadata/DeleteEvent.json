@@ -1,0 +1,1 @@
+{"name":"DeleteEvent","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"Record","type":"string"},{"name":"RecordName","type":"string"},{"name":"DeletedById","type":"reference"},{"name":"DeletedDate","type":"datetime"},{"name":"SobjectName","type":"string"},{"name":"SystemModstamp","type":"datetime"}]}

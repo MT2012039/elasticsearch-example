@@ -1,0 +1,1 @@
+{"name":"ContentVersionRating","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"ContentVersionId","type":"reference"},{"name":"Rating","type":"int"},{"name":"UserComment","type":"textarea"},{"name":"LastModifiedDate","type":"datetime"}]}

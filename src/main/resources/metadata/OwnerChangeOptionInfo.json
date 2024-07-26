@@ -1,0 +1,1 @@
+{"name":"OwnerChangeOptionInfo","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"EntityDefinitionId","type":"string"},{"name":"Name","type":"string"},{"name":"Label","type":"string"},{"name":"IsEditable","type":"boolean"},{"name":"DefaultValue","type":"boolean"},{"name":"ParentId","type":"string"}]}

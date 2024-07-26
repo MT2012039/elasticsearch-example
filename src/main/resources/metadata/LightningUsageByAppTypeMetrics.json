@@ -1,0 +1,1 @@
+{"name":"LightningUsageByAppTypeMetrics","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"MetricsDate","type":"date"},{"name":"UserId","type":"reference"},{"name":"AppExperience","type":"string"},{"name":"SystemModstamp","type":"datetime"}]}

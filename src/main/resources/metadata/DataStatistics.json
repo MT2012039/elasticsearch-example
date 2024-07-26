@@ -1,0 +1,1 @@
+{"name":"DataStatistics","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ExternalId","type":"string"},{"name":"StatType","type":"picklist"},{"name":"UserId","type":"reference"},{"name":"Type","type":"picklist"},{"name":"StatValue","type":"int"}]}

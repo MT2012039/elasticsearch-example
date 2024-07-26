@@ -1,0 +1,1 @@
+{"name":"AuraDefinitionBundleInfo","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"AuraDefinitionBundleId","type":"string"},{"name":"ApiVersion","type":"double"},{"name":"DeveloperName","type":"string"},{"name":"NamespacePrefix","type":"string"}]}

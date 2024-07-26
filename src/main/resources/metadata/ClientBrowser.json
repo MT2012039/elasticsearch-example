@@ -1,0 +1,1 @@
+{"name":"ClientBrowser","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UsersId","type":"reference"},{"name":"FullUserAgent","type":"string"},{"name":"ProxyInfo","type":"string"},{"name":"LastUpdate","type":"datetime"},{"name":"CreatedDate","type":"datetime"}]}

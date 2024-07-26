@@ -1,0 +1,1 @@
+{"name":"UserLogin","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"IsFrozen","type":"boolean"},{"name":"IsPasswordLocked","type":"boolean"},{"name":"LastModifiedDate","type":"datetime"},{"name":"LastModifiedById","type":"reference"}]}

@@ -1,0 +1,1 @@
+{"name":"AppTabMember","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"AppDefinitionId","type":"string"},{"name":"TabDefinitionId","type":"string"},{"name":"SortOrder","type":"int"},{"name":"WorkspaceDriverField","type":"string"}]}

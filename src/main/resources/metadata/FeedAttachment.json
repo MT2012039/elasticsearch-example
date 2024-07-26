@@ -1,0 +1,1 @@
+{"name":"FeedAttachment","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"FeedEntityId","type":"reference"},{"name":"Type","type":"picklist"},{"name":"RecordId","type":"reference"},{"name":"Title","type":"string"},{"name":"Value","type":"string"},{"name":"IsDeleted","type":"boolean"}]}

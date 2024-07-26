@@ -1,0 +1,1 @@
+{"name":"SalesStore","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ImplementorType","type":"string"},{"name":"LocationId","type":"reference"},{"name":"Description","type":"textarea"},{"name":"Name","type":"string"}]}

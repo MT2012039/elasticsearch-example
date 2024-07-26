@@ -1,0 +1,1 @@
+{"name":"ContentVersionComment","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"ContentDocumentId","type":"reference"},{"name":"ContentVersionId","type":"reference"},{"name":"UserComment","type":"textarea"},{"name":"CreatedDate","type":"datetime"}]}

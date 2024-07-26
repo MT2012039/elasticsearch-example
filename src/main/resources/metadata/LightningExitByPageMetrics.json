@@ -1,0 +1,1 @@
+{"name":"LightningExitByPageMetrics","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"MetricsDate","type":"date"},{"name":"UserId","type":"reference"},{"name":"PageName","type":"string"},{"name":"SystemModstamp","type":"datetime"},{"name":"RecordCount","type":"int"}]}

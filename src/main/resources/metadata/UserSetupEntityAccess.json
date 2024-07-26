@@ -1,0 +1,1 @@
+{"name":"UserSetupEntityAccess","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"DurableId","type":"string"},{"name":"SetupEntityId","type":"string"},{"name":"KeyPrefix","type":"string"},{"name":"DeveloperName","type":"string"},{"name":"NamespacePrefix","type":"string"},{"name":"LastCacheUpdate","type":"datetime"}]}

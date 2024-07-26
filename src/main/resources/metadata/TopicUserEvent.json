@@ -1,0 +1,1 @@
+{"name":"TopicUserEvent","description":null,"summary":null,"attributes":[{"name":"Id","type":"id"},{"name":"UserId","type":"reference"},{"name":"TopicId","type":"reference"},{"name":"ActionEnum","type":"picklist"},{"name":"CreatedDate","type":"datetime"}]}
