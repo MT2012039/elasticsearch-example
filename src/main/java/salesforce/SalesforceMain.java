@@ -2,6 +2,7 @@ package salesforce;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import document.Document;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,7 +20,7 @@ public class SalesforceMain {
         try {
             for (Document document : documents) {
                 String json = objectMapper.writeValueAsString(document);
-                File file = new File("C:\\workspace\\langchain4j-examples\\elasticsearch-example\\src\\main\\resources\\metadata\\"+document.getName()+".json");
+                File file = new File("src/main/resources/metadata/salesforce/"+document.getName()+".json");
                 file.createNewFile();
                 FileWriter fileWriter = new FileWriter(file);
                 fileWriter.write(json);

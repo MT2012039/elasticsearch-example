@@ -3,12 +3,11 @@ package salesforce;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.force.api.*;
-import org.testcontainers.shaded.org.checkerframework.checker.units.qual.A;
+import document.Document;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.*;
@@ -41,10 +40,14 @@ public class SalesforceMetadata {
             try {
                 Document document = new Document();
                 document.setName(future.get().getName());
-                document.setAttributes(future.get().getAllFields().stream().map(field -> new Attribute(field.getName(), field.getType())).collect(Collectors.toList()));
+               // document.setAttributes(future.get().getAllFields().stream().map(field -> new Attribute(field.getName(), field.getType())).collect(Collectors.toList()));
                 document.setDescription(getDescription(future.get().getName()));
-                document.setSummary(document.getDescription());
-                documents.add(document);
+                document.setApplication("salesforce");
+                document.setLabel(future.get().getLabel());
+            // document.setSummary(document.getDescription());
+                if(document.getDescription() != null) {
+                    documents.add(document);
+                }
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             } catch (ExecutionException e) {

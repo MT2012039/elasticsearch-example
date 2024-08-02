@@ -2,17 +2,13 @@ package json;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import salesforce.Document;
+import document.Document;
 import tokens.CountTokens;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class JsonParser {
 

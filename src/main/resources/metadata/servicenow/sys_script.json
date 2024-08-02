@@ -1,0 +1,1 @@
+{"name":"sys_script","description":"Server-side scripts that execute when records are displayed, inserted, updated, or deleted, used to enforce business logic.","summary":null,"label":"Business Rule","application":"servicenow"}

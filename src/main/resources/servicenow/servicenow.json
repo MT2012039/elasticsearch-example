@@ -1,0 +1,155 @@
+{
+  "User": {
+    "description": "Represents individual users within the ServiceNow platform, containing information like username, email, and roles."
+  },
+  "Group": {
+    "description": "Represents a collection of users, used for assigning tasks, roles, and access controls."
+  },
+  "Role": {
+    "description": "Defines the permissions and access levels for users within the ServiceNow platform."
+  },
+  "Incident": {
+    "description": "Tracks incidents reported by users, including details like the description of the problem, the user who reported it, and the current status."
+  },
+  "Problem": {
+    "description": "Records problems identified within the IT environment, aimed at root cause analysis and resolution to prevent future incidents."
+  },
+  "Change Request": {
+    "description": "Manages changes to IT infrastructure and services, including risk assessment, approval workflows, and implementation details."
+  },
+  "Service Request": {
+    "description": "Handles requests from users for various services, such as access to applications, new equipment, or other support."
+  },
+  "Request Item": {
+    "description": "Represents individual items in a service request."
+  },
+  "Catalog Task": {
+    "description": "Tracks tasks related to service catalog items."
+  },
+  "Knowledge Article": {
+    "description": "Stores information in a structured format to help users find solutions to common issues or to learn about specific topics."
+  },
+  "Configuration Item (CI)": {
+    "description": "Represents assets or services that need to be managed to deliver IT services, including hardware, software, and network components."
+  },
+  "Task": {
+    "description": "Generic table for tasks that need to be performed, used as a parent table for many other task-based tables like incidents and changes."
+  },
+  "Asset": {
+    "description": "Manages the lifecycle of assets from procurement to retirement."
+  },
+  "CMDB": {
+    "description": "Configuration Management Database, which stores information about configuration items (CIs) and their relationships."
+  },
+  "Service Catalog Item": {
+    "description": "Represents individual items in the service catalog that users can request, such as hardware, software, or access to services."
+  },
+  "Service Level Agreement (SLA)": {
+    "description": "Defines the level of service expected from a service provider, including metrics like response and resolution times."
+  },
+  "Business Rule": {
+    "description": "Server-side scripts that execute when records are displayed, inserted, updated, or deleted, used to enforce business logic."
+  },
+  "Client Script": {
+    "description": "Client-side scripts that execute in the browser to enhance user interaction and ensure data integrity."
+  },
+  "UI Policy": {
+    "description": "Client-side logic that changes the appearance and behavior of forms and fields dynamically."
+  },
+  "UI Action": {
+    "description": "Adds buttons, links, and context menu items to forms and lists, enabling users to perform actions like saving or deleting records."
+  },
+  "Workflow": {
+    "description": "Automates multi-step processes within the platform, defining the sequence of activities to be executed."
+  },
+  "Script Include": {
+    "description": "Server-side reusable scripts that can be invoked from other server-side scripts."
+  },
+  "Scheduled Job": {
+    "description": "Automates tasks that need to be performed on a regular schedule, like data imports or sending notifications."
+  },
+  "Report": {
+    "description": "Provides a way to create and view reports based on data in the system, allowing for visualization and analysis."
+  },
+  "Dashboard": {
+    "description": "Aggregates multiple reports and performance metrics into a single view, providing an overview of key data."
+  },
+  "Metric": {
+    "description": "Tracks and measures performance metrics for various processes and services."
+  },
+  "SLM": {
+    "description": "Service Level Management, used to manage SLAs, OLAs, and underpinning contracts."
+  },
+  "Audit": {
+    "description": "Tracks changes to records and maintains an audit history."
+  },
+  "Notification": {
+    "description": "Manages email notifications sent to users based on certain events or conditions."
+  },
+  "Inbound Email Action": {
+    "description": "Processes incoming email and triggers actions within the platform."
+  },
+  "Outbound Email": {
+    "description": "Records details of emails sent from the platform."
+  },
+  "Integration": {
+    "description": "Manages integrations with external systems, including APIs and data import/export."
+  },
+  "Attachment": {
+    "description": "Stores files attached to records within the platform."
+  },
+  "REST Message": {
+    "description": "Defines outbound REST messages to integrate with external REST APIs."
+  },
+  "SOAP Message": {
+    "description": "Defines outbound SOAP messages to integrate with external SOAP APIs."
+  },
+  "Service Portal": {
+    "description": "Customizable web interface for users to interact with the ServiceNow platform."
+  },
+  "Mobile App": {
+    "description": "Configuration for mobile applications to provide access to ServiceNow functionality on mobile devices."
+  },
+  "Flow Designer": {
+    "description": "Tool for creating and managing workflows using a low-code, drag-and-drop interface."
+  },
+  "Service Mapping": {
+    "description": "Maps IT services to the underlying infrastructure and applications supporting them."
+  },
+  "Event Management": {
+    "description": "Monitors and manages events generated by IT infrastructure to identify and address issues."
+  },
+  "Security Incident": {
+    "description": "Tracks and manages security incidents, including investigation and resolution."
+  },
+  "Threat Intelligence": {
+    "description": "Aggregates and analyzes threat data to identify potential security risks."
+  },
+  "Vulnerability": {
+    "description": "Manages the identification, assessment, and remediation of vulnerabilities in IT infrastructure."
+  },
+  "GRC": {
+    "description": "Governance, Risk, and Compliance management, used to ensure regulatory compliance and manage risks."
+  },
+  "Project": {
+    "description": "Manages projects, including tasks, resources, and timelines."
+  },
+  "Time Card": {
+    "description": "Tracks time spent on various tasks and projects."
+  },
+  "Idea": {
+    "description": "Captures and tracks ideas for improvement or innovation."
+  },
+  "Demand": {
+    "description": "Manages demands for new services, products, or projects."
+  },
+  "Cost Plan": {
+    "description": "Manages financial planning for projects and services."
+  },
+  "Agile Story": {
+    "description": "Tracks user stories in Agile development processes."
+  },
+  "Scrum Task": {
+    "description": "Tracks tasks in Scrum development processes."
+  }
+}

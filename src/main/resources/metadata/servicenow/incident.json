@@ -1,0 +1,1 @@
+{"name":"incident","description":"Tracks incidents reported by users, including details like the description of the problem, the user who reported it, and the current status.","summary":null,"label":"Incident","application":"servicenow"}

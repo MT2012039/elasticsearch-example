@@ -1,0 +1,1 @@
+{"name":"sc_ic_task_defn_staging","description":"Generic table for tasks that need to be performed, used as a parent table for many other task-based tables like incidents and changes.","summary":null,"label":"Task","application":"servicenow"}

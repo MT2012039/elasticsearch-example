@@ -1,27 +1,19 @@
 package tokens;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import salesforce.Document;
-
+import document.Document;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Collectors;
-
-import ai.djl.huggingface.tokenizers.Encoding;
-import ai.djl.huggingface.tokenizers.HuggingFaceTokenizer;
 
 
 public class CountTokens {
 
-    String DJL_MODEL = "sentence-transformers/all-MiniLM-L6-v2";
     public void countTokens(List<Document> documentList) throws IOException {
         Map<String, Integer> countTokens = new HashMap<>();
         for(Document document : documentList) {
-            String json = document.toString();
-            String [] tokens = getLLMTokens(json);
-            List<String> token_filtered = removeUnwantedTokens(tokens);
-            countTokens.put(document.getName(), token_filtered.size());
+            int token_count = getTokenCount(document.toString());
+            countTokens.put(document.getName(), token_count);
         }
         Map<String, Integer> sorted = sortByValue(countTokens);
         ObjectMapper mapper = new ObjectMapper();
@@ -49,12 +41,8 @@ public class CountTokens {
         return options;
     }
 
-    public String[] getLLMTokens(String text) {
-        Encoding encoding = HuggingFaceTokenizer.newInstance(DJL_MODEL, getDJLConfig()).encode(text);
-        return encoding.getTokens();
-    }
-
-    public List<String> removeUnwantedTokens(String [] tokens) {
-        return Arrays.stream(tokens).filter(s -> !(s.equals("{") || s.equals("") || s.equals("}") || s.equals(":") || s.equals(" ") || s.equals("\"") || s.equals(","))).collect(Collectors.toList());
+    public int getTokenCount(String text) {
+        dev.langchain4j.model.embedding.HuggingFaceTokenizer tokenizer = new dev.langchain4j.model.embedding.HuggingFaceTokenizer();
+        return tokenizer.estimateTokenCountInText(text);
     }
 }

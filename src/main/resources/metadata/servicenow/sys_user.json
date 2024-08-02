@@ -1,0 +1,1 @@
+{"name":"sys_user","description":"Represents individual users within the ServiceNow platform, containing information like username, email, and roles.","summary":null,"label":"User","application":"servicenow"}
