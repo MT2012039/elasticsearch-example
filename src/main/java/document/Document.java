@@ -45,6 +45,17 @@ public class Document {
     @JsonProperty
     String summary;
 
+    public List<Attribute> getAttributes() {
+        return attributes;
+    }
+
+    public void setAttributes(List<Attribute> attributes) {
+        this.attributes = attributes;
+    }
+
+    @JsonProperty
+    List<Attribute> attributes;
+
 
     public String getLabel() {
         return label;
@@ -73,6 +84,15 @@ public class Document {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             return objectMapper.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String getAttributesString() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return objectMapper.writeValueAsString(getAttributes());
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }

@@ -40,7 +40,7 @@ public class SalesforceMetadata {
             try {
                 Document document = new Document();
                 document.setName(future.get().getName());
-               // document.setAttributes(future.get().getAllFields().stream().map(field -> new Attribute(field.getName(), field.getType())).collect(Collectors.toList()));
+                document.setAttributes(future.get().getAllFields().stream().map(field -> new Attribute(field.getName(), field.getType())).collect(Collectors.toList()));
                 document.setDescription(getDescription(future.get().getName()));
                 document.setApplication("salesforce");
                 document.setLabel(future.get().getLabel());

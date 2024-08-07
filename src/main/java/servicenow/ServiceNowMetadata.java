@@ -67,7 +67,7 @@ public class ServiceNowMetadata {
                 Attribute attribute = new Attribute(attributeResult.getName(), attributeResult.internalType);
                 attributes.add(attribute);
             }
-           // document.setAttributes(attributes);
+            document.setAttributes(attributes);
             String json = mapper.writeValueAsString(document);
             File file = new File("src/main/resources/metadata/servicenow/"+document.getName()+".json");
             file.createNewFile();

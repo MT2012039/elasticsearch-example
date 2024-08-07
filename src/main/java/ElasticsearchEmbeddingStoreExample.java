@@ -33,15 +33,17 @@ public class ElasticsearchEmbeddingStoreExample {
     public static final Integer SPLIT_AT = 10000;
     public static final Integer MAX_OVERLAP = 100;
     public static final String  SPLIT_TYPE = "recursive";
-
-    public static void main(String[] args) throws InterruptedException, IOException {
+    EmbeddingModel embeddingModel = new E5SmallV2EmbeddingModel();
+    EmbeddingStore<TextSegment> embeddingStore;
+    ElasticsearchContainer elastic;
+    public void store() throws InterruptedException, IOException {
         HuggingFaceTokenizer tokenizer = new HuggingFaceTokenizer();
         SplitDocuments splitter = new SplitDocuments(SPLIT_TYPE, SPLIT_AT, MAX_OVERLAP);
         JsonParser parser = new JsonParser();
         List<TextSegment> salesforce_segments = new ArrayList<>();
         List<TextSegment> servicenow_segments = new ArrayList<>();
         List<Document> documents = FileSystemDocumentLoader.loadDocuments("src/main/resources/metadata/salesforce");
-        for (Document document: documents) {
+        for (Document document : documents) {
             if (tokenizer.estimateTokenCountInText(document.text()) > SPLIT_AT) {
                 salesforce_segments.addAll(splitter.getSplits(document));
             } else {
@@ -50,7 +52,7 @@ public class ElasticsearchEmbeddingStoreExample {
 
         }
         documents = FileSystemDocumentLoader.loadDocuments("src/main/resources/metadata/servicenow");
-        for (Document document: documents) {
+        for (Document document : documents) {
             if (tokenizer.estimateTokenCountInText(document.text()) > SPLIT_AT) {
                 servicenow_segments.addAll(splitter.getSplits(document));
             } else {
@@ -59,18 +61,19 @@ public class ElasticsearchEmbeddingStoreExample {
 
         }
 
-        try (ElasticsearchContainer elastic = new ElasticsearchContainer("docker.elastic.co/elasticsearch/elasticsearch:8.9.0")
-                .withEnv("xpack.security.enabled", "false")) {
+        try {
+            elastic = new ElasticsearchContainer("docker.elastic.co/elasticsearch/elasticsearch:8.9.0")
+                .withEnv("xpack.security.enabled", "false");
             elastic.start();
 
-            EmbeddingStore<TextSegment> embeddingStore = ElasticsearchEmbeddingStore.builder()
+            embeddingStore = ElasticsearchEmbeddingStore.builder()
                     .serverUrl("http://" + elastic.getHttpHostAddress())
                     .dimension(384)
                     .indexName("metadata-rag1")
                     .build();
 
             //Change the model here for experiment
-            EmbeddingModel embeddingModel = new E5SmallV2EmbeddingModel();
+
 
             for (TextSegment textSegment : salesforce_segments) {
                 textSegment.metadata().put("adapter", "Salesforce");
@@ -86,7 +89,18 @@ public class ElasticsearchEmbeddingStoreExample {
 
 
             Thread.sleep(1000); // to be sure that embeddings were persisted
-            Set<String> propmtset = Prompts.app_to_app_prompts.keySet();
+        } catch (Exception exception) {
+            throw exception;
+        }
+    }
+
+          public void getAllfromStore() {
+           Set<String> propmtset = Prompts.app_to_app_prompts.keySet();
+              embeddingStore = ElasticsearchEmbeddingStore.builder()
+                      .serverUrl("http://" + elastic.getHttpHostAddress())
+                      .dimension(384)
+                      .indexName("metadata-rag1")
+                      .build();
             for (String promptKey : propmtset) {
                 String prompt = Prompts.app_to_app_prompts.get(promptKey);
                 System.out.println("Prompt: " + prompt);
@@ -103,5 +117,11 @@ public class ElasticsearchEmbeddingStoreExample {
                 System.out.println("-------------------------------------------------------------------------------");
             }
         }
+
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        ElasticsearchEmbeddingStoreExample example = new ElasticsearchEmbeddingStoreExample();
+        example.store();
+        example.getAllfromStore();
     }
 }

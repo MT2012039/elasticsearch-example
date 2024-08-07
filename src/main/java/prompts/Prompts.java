@@ -13,7 +13,7 @@ public class Prompts {
 
     static {
         promptMap = new LinkedHashMap<>();
-        promptMap.put("Competitor", "Retrieve Competitors with their SWOT analyses and competitive landscapes from Salesforce");
+        promptMap.put("Competitor", "Retrieve all Accounts with their names and industry types from Salesforce");
         promptMap.put("Case", "Show Cases with their resolution statuses and resolution times from Salesforce");
         promptMap.put("Opportunity", "Fetch Opportunities along with their associated Competitors and their strengths/weaknesses from Salesforce");
         promptMap.put("Lead", "List Leads along with their associated Campaigns and responses from Salesforce");

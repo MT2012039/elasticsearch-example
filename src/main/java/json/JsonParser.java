@@ -1,6 +1,7 @@
 package json;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import document.Document;
 import tokens.CountTokens;
@@ -13,18 +14,22 @@ import java.util.List;
 public class JsonParser {
 
     ObjectMapper objectMapper = new ObjectMapper();
+
     public List<File> getAllJsonFiles(String path) {
         File folder = new File(path);
         List<File> files = new ArrayList<File>();
         for (File file : folder.listFiles())
         {
-            files.add(file);
+            if(file.isFile()) {
+                files.add(file);
+            }
 
         }
         return files;
     }
 
     public List<Document> getDocuments(String path) throws IOException {
+        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         List<File> files = getAllJsonFiles(path);
         List<Document> documents = new ArrayList<Document>();
         for(File f : files) {
