@@ -38,7 +38,7 @@ public class QueryPrompts {
             "                \"\\n\" +\n" +
             "                \"%s";
 
-    public static final List<String> questions = Arrays.asList(new String[]{"Retrieve the status of Salesforce accounts related to the Chevron Deal",
+    public static final List<String> questions = Arrays.asList(new String[]{"Retrieve the stage of Salesforce accounts related to the Chevron Deal",
             "Retrieve details of Opportunities with ClosedWon stage for the currentmonth"
             , "Get Cases with their case origins and case reasons from Salesforce",
             "Fetch the top 10 Salesforce Opportunities by the expected close date filtered by a particular opportunity type",

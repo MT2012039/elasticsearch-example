@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class QueryMain {
 
-    public static final String MODEL = "gpt4";
+    public static final String MODEL = "MISTRAL";
 
     public static void main(String[] args) throws IOException, InterruptedException {
         QuerySummary summary = getModelClass();

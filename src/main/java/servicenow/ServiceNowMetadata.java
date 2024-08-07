@@ -23,8 +23,8 @@ import java.util.Map;
 public class ServiceNowMetadata {
 
     ObjectMapper mapper = new ObjectMapper();
-    File table = new File("C:\\workspace\\langchain4j-examples\\elasticsearch-example\\src\\main\\resources\\servicenow\\sys_db_object.json");
-    File desc = new File("C:\\workspace\\langchain4j-examples\\elasticsearch-example\\src\\main\\resources\\servicenow\\servicenow.json");
+    File table = new File("src/main/resources/servicenow/sys_db_object.json");
+    File desc = new File("src/main/resources/servicenow/servicenow.json");
     public ServiceNowMetadata () {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
     }
